@@ -1,0 +1,106 @@
+@import "variable";
+
+.body {
+    background-color: $bg-body;
+}
+
+.navbar-expand-lg {
+    .navbar-nav {
+        .nav-item {
+            a.nav-link {
+                position: relative;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+.navbar {
+    background-color: $bg-head;
+    .navbar-nav {
+        .nav-item {
+            a {
+                &:after {
+                    content: '';
+                    width: 1px;
+                    height: 20px;
+                    position: absolute;
+                    right: 0;
+                    top: 4px;
+                    background-color: $bar-color;
+                }
+            }
+        }
+    }
+}
+
+.navbar-expand-lg {
+    .navbar-nav {
+        .nav-item {
+            &:last-child {
+                .nav-link {
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.top-para {
+    margin-top: $margin-top-30;
+
+    h1 {
+        font-size: $heading-font;
+        margin-bottom: $margin-bottom-30;
+    }
+}
+
+.text {
+    color: $color;
+    text-align: start;
+}
+
+.card {
+    img {
+        height: $card-img-height;
+    }
+
+    .button {
+        border: 1px solid $btn-bg;
+        background-color: $bg-body;
+        padding: $button-padding-y $button-padding-x;
+        border-radius: $button-radius;
+        color: $color;
+        
+        &:hover {
+            background-color: $btn-bg;
+            color: $bg-body;
+            transition-duration: 0.2s;
+        }
+    }
+}
+
+.bear-heading {
+    color: $bar-color;
+    text-align: start;
+    font-size: $sub-heading-font;
+    margin-bottom: $margin-bottom-30;
+}
+
+.blog-footer  {
+    background-color: $bg-footer;
+    color: $color;
+    text-align: center;
+    padding: $padding-50;
+    margin: 0;
+
+    a {
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
